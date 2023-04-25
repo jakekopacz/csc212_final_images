@@ -1,0 +1,31 @@
+digraph G {
+    
+  
+    Root [ shape=record label="{Root| False |}"]
+
+    node [shape=Mrecord];
+    edge [style = "invis"]
+    node [style = "invis"]
+    d [label = "{False | O}"]
+    c [label = "{False | A}"]
+    o [label = "{True | G}" color = "blue"]
+    g [label = "{True | S}" color = "blue"]
+    s [label = "{True | }"]
+    a [label = "{False | L T}"]
+    l [label = "{False | L}"]
+    l2 [label = "{True | }" color = "blue"]
+    t [label = "{True | }" color = "blue"]
+    
+    Root -> d;
+    Root -> c;
+    
+    d -> o;
+    o -> g;
+    g -> s;
+    c -> a;
+    a -> l;
+    a -> t;
+    l -> l2;
+
+
+}
